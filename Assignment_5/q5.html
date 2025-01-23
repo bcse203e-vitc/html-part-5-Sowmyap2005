@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            display:flex;
+            padding:10px;
+            align-items:center;
+            justify-content: center;
+        }
+        .grad{
+            font-size:25px;
+            background-color: pink;
+            border:none;
+            margin:30px 30px 30px 30px;
+            border-radius:5px;
+        }
+        .grad:hover{
+            font-size:25px;
+            margin:30px 30px 30px 30px;
+            background:linear-gradient(90deg,blueviolet,rgb(199, 184, 213));
+            border-radius:5px;
+        }
+        .Border{
+            font-size:25px;
+            background-color: pink;
+            margin:30px 30px 30px 30px;
+            border:3px solid pink;
+            border-radius:5px;
+        }
+        .Border:hover{
+            font-size:25px;
+            margin:30px 30px 30px 30px;
+            border:3px solid blueviolet;
+            border-radius:5px;
+        }
+        .Glow{
+            font-size:25px;
+            background-color: pink;
+            margin:30px 30px 30px 30px;
+            border:3px solid pink;
+            border-radius:5px;
+        }
+        .Glow:hover{
+            font-size:25px;
+            margin:30px 30px 30px 30px;
+            box-shadow:10px 10px 8px blueviolet;
+            border-radius:5px;
+        }
+    </style>
+</head>
+<body>
+    <button class="grad">Gradient</button>
+    <button class="Border">Border change</button>
+    <button class="Glow">Glow effect</button>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            flex:1;
+            flex-wrap:wrap;
+        }
+        .email,.pass{
+            padding:10px;
+            color:white;
+            background-color: blueviolet;
+            border-radius: 5px;
+        }
+        .email:hover,.pass:hover{
+            padding:10px;
+            color:white;
+            background:linear-gradient(90deg,blueviolet,rgb(204, 193, 215));
+             border-radius: 5px;
+        }
+        input[type="email"]:valid,input[type="password"]:valid{
+            border-color: green;
+        }
+        input[type="email"]:invalid,input[type="password"]:invalid{
+            border-color: red;
+        }
+        .submit{
+            padding:10px;
+            color:white;
+            background-color: blueviolet;
+        }
+        .submit:hover{
+            box-shadow:10px 10px 8px blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Form</legend>
+        <form>
+            <br>
+            <label class="email">email</label><br><br>
+            <input id="email" name="email" type="email"><br><br>
+            <label class="pass">Password</label><br><br>
+            <input id="pass" name="pass" type="password"><br><br>
+            <input type="checkbox" id="rem">
+            <label class="rem">Remember Me</label><br><br>
+            <button type="button" class="submit">SUBMIT</button><br><br>
+        </form>
+    </fieldset>
+</body>
+</html>

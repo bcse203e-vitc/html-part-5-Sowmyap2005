@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            flex-direction:column;
+            padding:10px;
+        }
+        header{
+            background-color: rgb(24, 185, 24);
+            color: white;
+            text-align: center;
+            height:50px;
+            border:1px solid whitesmoke;
+            padding:10px;
+        }
+        main{
+            display:flex;
+            flex:1;
+        }
+        .s1,.s2{
+            margin:30px 30px 30px 30px;
+            text-align: center;
+            flex:1;
+            display:flex;
+            flex-wrap:wrap;
+            flex-direction:column;
+            padding:10px;
+            border:1px solid grey;
+            row-gap:10px;
+
+        }
+        footer{
+            margin-top:30px;
+            background-color: rgb(24, 185, 24);
+            color: white;
+            text-align: center;
+            border:1px solid whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>MY RESPONSIVE WEBPAGE</h2>
+    </header>
+    <main class="main">
+        <section class="s1">
+            <h3>Left Column</h3>
+            <p>This is the content of left column.</p>
+        </section>
+        <section class="s2">
+            <h3>Right Column</h3>
+            <p>This is the content of right column.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Footer Content</p>
+    </footer>
+</body>
+</html>

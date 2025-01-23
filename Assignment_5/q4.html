@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            display:flex;
+            flex:1;
+            justify-content:center;
+        }
+        .menu{
+            padding:10px;
+        }
+        .mtext
+        {
+            background-color: lightgreen;
+            color:white;
+            padding:10px;
+            border:2px solid grey;
+        }
+        .dropdown{
+            display:none;
+            flex-wrap:wrap;
+            flex-direction:column;
+            border:2px solid grey;
+        }
+        .menu:hover .dropdown{
+            display:flex;
+
+        }
+        .dropdown a{
+            text-decoration:none;
+            margin:1px 1px 1px 1px;
+            padding:10px;
+
+        }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <section class="menu">
+            <p class="mtext">MENU</p>
+            <div class="dropdown">
+                <p><a href="#home">Home</a></p>
+                <p><a href="#about">about</a></p>
+                <p><a href="#service">service</a></p>
+                <p><a href="#contact">contact</a></p>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>
